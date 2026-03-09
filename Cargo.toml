@@ -3,9 +3,11 @@ name = "merksql"
 version = "0.1.0"
 edition = "2024"
 description = "Streaming SQL engine for merkql — ksqlDB-style queries over embedded event logs"
+license = "MIT"
+repository = "https://github.com/tailoredshapes/merksql"
 
 [dependencies]
-merkql = { path = "../merkql" }
+merkql = { version = "0.2", path = "../merkql" }
 sqlparser = "0.61"
 serde_json = "1"
 serde = { version = "1", features = ["derive"] }
